@@ -55,6 +55,6 @@ g++ solution_2.cpp lib_load
 ./a.out
 ```
 
-> The gifts exchanges will be stored inbasket_out.txt file.  
+> The gifts exchanges will be stored in basket_out.txt file.  
 > k most happy couples will be stored in happy.txt  
 > k most compatible couples will be stored in compatible.txt  
