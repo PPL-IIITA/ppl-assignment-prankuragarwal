@@ -23,7 +23,7 @@ class generousboy : public boys {
 		int type;
 	
 	public:
-		generousboy(string Bname, int Battract, int Bintell, int Bbudget, int Bminreq) : boys(Bname, Battract, Bintell, Bbudget, Bminreq) {
+		generousboy(string Bname, int Battract, int Bintell, int Bbudget, int Bminreq, string Gfname) : boys(Bname, Battract, Bintell, Bbudget, Bminreq, Gfname) {
 			type = 2;
 		}
 };

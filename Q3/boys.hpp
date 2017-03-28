@@ -26,14 +26,14 @@ class boys {
 		string gfname;	///name of the girlfriend
 
 	public:
-		boys(string Bname, int Battract, int Bintell, int Bbudget, int Bminreq){
+		boys(string Bname, int Battract, int Bintell, int Bbudget, int Bminreq, string Gfname){
 			bname = Bname;
 			battract = Battract;
 			bintell = Bintell;
 			bbudget = Bbudget;
 			bminreq = Bminreq;
 			committed = 0;
-			gfname = "\0";
+			gfname = Gfname;
 		}
 
 	public:

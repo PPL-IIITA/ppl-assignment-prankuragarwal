@@ -43,11 +43,6 @@ int main() {
 		price[i]++;
 	}
 	sort(price, price + i);
-	int lux;
-	int diffget;
-	int uti;
-	int utival;
-	int taken;
 	for (i = 0; i < gift_num; i++){
 		temp = rand() % 3;
 		temp++;
@@ -72,8 +67,6 @@ int main() {
 		cout << temp << " ";
 		temp = rand() % 3;
 		temp++;
-		cout << temp << " ";
-		temp = 0;
 		cout << temp << endl;
 	}
 	return 0;

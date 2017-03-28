@@ -45,8 +45,8 @@ void print_couples::out_form(boys boy[], girls girl[], int boys_num, int girls_n
 			bn = girl[i].bfname;
 			for(j = 0; j < boys_num; j++){
 				if(boy[j].bname == bn){
-					cout << boy[j].bname << " " << boy[j].battract << " " << boy[j].bintell << " " << boy[j].bbudget << " " << boy[j].bminreq << " " << boy[j].committed << " " << boy[j].gfname << " " << boy[j].btype << endl;
-					cout << girl[i].gname << " " << girl[i].gattract << " " << girl[i].gintell << " " << girl[i].gmainbudget << " " << girl[i].committed << " " << girl[i].bfname << " " << girl[i].gtype << " " << girl[i].gcri << endl;
+					cout << boy[j].bname << " " << boy[j].battract << " " << boy[j].bintell << " " << boy[j].bbudget << " " << boy[j].bminreq << " " << boy[j].gfname << " " << boy[j].type << endl;
+					cout << girl[i].gname << " " << girl[i].gattract << " " << girl[i].gintell << " " << girl[i].gmainbudget << " " << girl[i].bfname << " " << girl[i].type << " " << girl[i].gcri << endl;
 				}
 			}
 		}

@@ -26,13 +26,13 @@ class girls {
 		int gcri;			///girl's criteria: 1-most attractive; 2-most rich; 3-most intelligent
 
 	public:
-		girls(string Gname, int Gattract, int Gintell, int Gmainbudget, int Gcri){
+		girls(string Gname, int Gattract, int Gintell, int Gmainbudget, int Gcri, string Bfname){
 			gname = Gname;
 			gattract = Gattract;
 			gintell = Gintell;
 			gmainbudget = Gmainbudget;
 			committed = 0;
-			bfname = "\0";
+			bfname = Bfname;
 			gcri = Gcri;
 		}
 

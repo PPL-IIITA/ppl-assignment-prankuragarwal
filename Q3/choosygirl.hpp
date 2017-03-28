@@ -23,7 +23,7 @@ class choosygirl : public girls {
 		int type;
 	
 	public:
-		choosygirl(string Gname, int Gattract, int Gintell, int Gmainbudget, int Gcri) : girls(Gname, Gattract, Gintell, Gmainbudget, Gcri) {
+		choosygirl(string Gname, int Gattract, int Gintell, int Gmainbudget, int Gcri, string Bfname) : girls(Gname, Gattract, Gintell, Gmainbudget, Gcri, Bfname) {
 			type = 1;
 		}
 };

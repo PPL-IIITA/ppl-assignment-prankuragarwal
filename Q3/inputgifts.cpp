@@ -19,7 +19,8 @@ using namespace std;
 #define Sl(x)      scanf("%lld", &x)
 
 //own header inclusions
-#include "input.hpp"
+#include "inputgifts.hpp"
+
 
 /**
 
@@ -27,58 +28,78 @@ using namespace std;
 
 */
 
-void input::inp(boys boy[], girls girl[], int *boys_num, int *girls_num){
-	freopen("input.txt", "r", stdin);
-
-	int i;
-	S(*boys_num);		///input number of boys
-	S(*girls_num);		///input number of girls
-
-	string bname, gfname;
-	int battract, bintell, bbudget, bminreq, btype;
-
-	///loop to take input of all boys
-	for(i = 0; i < *boys_num; i++){
+void inputgifts::inpc(boys boy[], girls girl[], int *coup_num){
+	S(*coup_num);	///number of couples
+	///loop to take input of all couples: first boyfriend's then girlfriend's information
+	for(i = 0; i < *coup_num; i++){
 		cin >> bname;
 		S(battract);
 		S(bintell);
 		S(bbudget);
 		S(bminreq);
+		cin >> gfname;
 		S(btype);
-		gfname = "\0";
 		if (btype == 1){
 			miserboy *temp = new miserboy(bname, battract, bintell, bbudget, bminreq, gfname);
+			*temp.committed = 1;
 			boy[i] = *temp;
 		} else if (btype == 2){
 			generousboy *temp = new generousboy(bname, battract, bintell, bbudget, bminreq, , gfname);
+			*temp.committed = 1;
 			boy[i] = *temp;
 		} else if (btype == 3){
 			geekboy *temp = new geekboy(bname, battract, bintell, bbudget, bminreq, , gfname);
+			*temp.committed = 1;
 			boy[i] = *temp;
 		}
-	}
 
-	string gname, bfname;
-	int gattract, gintell, gmainbudget,gtype, gcri;
-
-	///loop to take input of all girls
-	for(i = 0; i < *girls_num; i++){
 		cin >> gname;
 		S(gattract);
 		S(gintell);
 		S(gmainbudget);
+		cin >> bfname;
 		S(gtype);
 		S(gcri);
-		bfname = "\0";
 		if (gtype == 1){
 			choosygirl *temp = new choosygirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
+			*temp.committed = 1;
 			girl[i] = *temp;
 		} else if (gtype == 2){
 			normalgirl *temp = new normalgirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
+			*temp.committed = 1;
 			girl[i] = *temp;
 		} else if (gtype == 3){
 			desperategirl *temp = new desperategirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
+			*temp.committed = 1;
 			girl[i] = *temp;
+		}
+	}
+}
+
+void inputgifts::inpg(gifts gift[], int *gift_num){
+	S(*gift_num);	///number of gifts
+
+	int type, itemno, price, val, lux, diffget, uti, utival;
+
+	///loop to take input of all gifts
+	for(i = 0; i < *gift_num; i++){
+		S(type);
+		S(itemno);
+		S(price);
+		S(val);
+		S(lux);
+		S(diffget);
+		S(uti);
+		S(utival);
+		if (type == 1){
+			essentialgifts *temp = new essentialgifts(itemno, price, val, lux, diffget, uti, utival);
+			gift[i] = *temp;
+		} else if (type == 2){
+			luxurygifts *temp = new luxurygifts(itemno, price, val, lux, diffget, uti, utival);
+			gift[i] = *temp;
+		} else if (type == 3){
+			utilitygifts *temp = new utilitygifts(itemno, price, val, lux, diffget, uti, utival);
+			gift[i] = *temp;
 		}
 	}
 }
