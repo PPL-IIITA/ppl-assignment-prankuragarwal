@@ -33,7 +33,12 @@ class boys {
 			bbudget = Bbudget;
 			bminreq = Bminreq;
 			committed = 0;
-			gfname = NULL;
+			gfname = "\0";
+		}
+
+	public:
+		boys(){
+			
 		}
 };
 #endif

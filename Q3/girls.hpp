@@ -32,8 +32,13 @@ class girls {
 			gintell = Gintell;
 			gmainbudget = Gmainbudget;
 			committed = 0;
-			bfname = NULL;
+			bfname = "\0";
 			gcri = Gcri;
+		}
+
+	public:
+		girls(){
+			
 		}
 };
 #endif
