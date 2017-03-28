@@ -49,11 +49,6 @@ int main(){
 		cout << temp << " ";
 		temp = rand() % 10;
 		temp++;
-		cout << temp << " ";
-		temp = 0;
-		cout << temp << " " << "NULL" << " ";
-		temp = rand() % 3;
-		temp++;
 		cout << temp << endl;
 	}
 	for(i = 0; i < girl_num; i++){
@@ -67,8 +62,6 @@ int main(){
 		temp = rand() % 5000;
 		temp++;
 		cout << temp << " ";
-		temp = 0;
-		cout << temp << " " << "NULL" << " ";
 		temp = rand() % 3;
 		temp++;
 		cout << temp << endl;
