@@ -24,9 +24,10 @@ class boys {
 		int bminreq;	///boy's minimum requirement of attractiveness of girl
 		int committed;	///0 if the boy is not committed else 1
 		string gfname;	///name of the girlfriend
+		int type; 		///boy's type : 1-Miser; 2-Generous; 3-Geek
 
 	public:
-		boys(string Bname, int Battract, int Bintell, int Bbudget, int Bminreq, string Gfname){
+		boys(string Bname, int Battract, int Bintell, int Bbudget, int Bminreq, string Gfname, int Type){
 			bname = Bname;
 			battract = Battract;
 			bintell = Bintell;
@@ -34,6 +35,7 @@ class boys {
 			bminreq = Bminreq;
 			committed = 0;
 			gfname = Gfname;
+			type = Type;
 		}
 
 	public:

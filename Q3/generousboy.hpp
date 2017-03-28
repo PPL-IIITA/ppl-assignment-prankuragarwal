@@ -20,10 +20,7 @@
 
 class generousboy : public boys {
 	public:
-		int type;
-	
-	public:
-		generousboy(string Bname, int Battract, int Bintell, int Bbudget, int Bminreq, string Gfname) : boys(Bname, Battract, Bintell, Bbudget, Bminreq, Gfname) {
+		generousboy(string Bname, int Battract, int Bintell, int Bbudget, int Bminreq, string Gfname, int Type) : boys(Bname, Battract, Bintell, Bbudget, Bminreq, Gfname, Type) {
 			type = 2;
 		}
 };

@@ -20,10 +20,7 @@
 
 class miserboy : public boys {
 	public:
-		int type;
-	
-	public:
-		miserboy(string Bname, int Battract, int Bintell, int Bbudget, int Bminreq, string Gfname) : boys(Bname, Battract, Bintell, Bbudget, Bminreq, Gfname) {
+		miserboy(string Bname, int Battract, int Bintell, int Bbudget, int Bminreq, string Gfname, int Type) : boys(Bname, Battract, Bintell, Bbudget, Bminreq, Gfname, Type) {
 			type = 1;
 		}
 };

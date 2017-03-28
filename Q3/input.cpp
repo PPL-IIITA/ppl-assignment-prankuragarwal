@@ -47,13 +47,13 @@ void input::inp(boys boy[], girls girl[], int *boys_num, int *girls_num){
 		S(btype);
 		gfname = "\0";
 		if (btype == 1){
-			miserboy *temp = new miserboy(bname, battract, bintell, bbudget, bminreq, gfname);
+			miserboy *temp = new miserboy(bname, battract, bintell, bbudget, bminreq, gfname, 1);
 			boy[i] = *temp;
 		} else if (btype == 2){
-			generousboy *temp = new generousboy(bname, battract, bintell, bbudget, bminreq, , gfname);
+			generousboy *temp = new generousboy(bname, battract, bintell, bbudget, bminreq, gfname, 2);
 			boy[i] = *temp;
 		} else if (btype == 3){
-			geekboy *temp = new geekboy(bname, battract, bintell, bbudget, bminreq, , gfname);
+			geekboy *temp = new geekboy(bname, battract, bintell, bbudget, bminreq, gfname, 3);
 			boy[i] = *temp;
 		}
 	}
@@ -71,13 +71,13 @@ void input::inp(boys boy[], girls girl[], int *boys_num, int *girls_num){
 		S(gcri);
 		bfname = "\0";
 		if (gtype == 1){
-			choosygirl *temp = new choosygirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
+			choosygirl *temp = new choosygirl(gname, gattract, gintell, gmainbudget, gcri, bfname, 1);
 			girl[i] = *temp;
 		} else if (gtype == 2){
-			normalgirl *temp = new normalgirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
+			normalgirl *temp = new normalgirl(gname, gattract, gintell, gmainbudget, gcri, bfname, 2);
 			girl[i] = *temp;
 		} else if (gtype == 3){
-			desperategirl *temp = new desperategirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
+			desperategirl *temp = new desperategirl(gname, gattract, gintell, gmainbudget, gcri, bfname, 3);
 			girl[i] = *temp;
 		}
 	}

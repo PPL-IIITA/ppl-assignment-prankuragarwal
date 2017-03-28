@@ -24,9 +24,10 @@ class girls {
 		int committed;		///0 if the girl is not committed else 1
 		string bfname;		///name of boyfriend
 		int gcri;			///girl's criteria: 1-most attractive; 2-most rich; 3-most intelligent
+		int type;			///girl's type: 1-Choosy; 2-Normal; 3-Desperate
 
 	public:
-		girls(string Gname, int Gattract, int Gintell, int Gmainbudget, int Gcri, string Bfname){
+		girls(string Gname, int Gattract, int Gintell, int Gmainbudget, int Gcri, string Bfname, int Type){
 			gname = Gname;
 			gattract = Gattract;
 			gintell = Gintell;
@@ -34,6 +35,7 @@ class girls {
 			committed = 0;
 			bfname = Bfname;
 			gcri = Gcri;
+			type = Type;
 		}
 
 	public:

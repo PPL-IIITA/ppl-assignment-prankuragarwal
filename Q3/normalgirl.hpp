@@ -20,11 +20,8 @@
 
 class normalgirl : public girls {
 	public:
-		int type;
-	
-	public:
-		normalgirl(string Gname, int Gattract, int Gintell, int Gmainbudget, int Gcri, string Bfname) : girls(Gname, Gattract, Gintell, Gmainbudget, Gcri, Bfname) {
-			type = 1;
+		normalgirl(string Gname, int Gattract, int Gintell, int Gmainbudget, int Gcri, string Bfname, int Type) : girls(Gname, Gattract, Gintell, Gmainbudget, Gcri, Bfname, Type) {
+			type = 2;
 		}
 };
 #endif

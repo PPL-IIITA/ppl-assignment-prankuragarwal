@@ -30,6 +30,13 @@ using namespace std;
 
 void inputgifts::inpc(boys boy[], girls girl[], int *coup_num){
 	S(*coup_num);	///number of couples
+
+	string bname, gfname;
+	int battract, bintell, bbudget, bminreq, btype;
+
+	string gname, bfname;
+	int gattract, gintell, gmainbudget,gtype, gcri;
+
 	///loop to take input of all couples: first boyfriend's then girlfriend's information
 	for(i = 0; i < *coup_num; i++){
 		cin >> bname;
@@ -41,15 +48,15 @@ void inputgifts::inpc(boys boy[], girls girl[], int *coup_num){
 		S(btype);
 		if (btype == 1){
 			miserboy *temp = new miserboy(bname, battract, bintell, bbudget, bminreq, gfname);
-			*temp.committed = 1;
+			temp->committed = 1;
 			boy[i] = *temp;
 		} else if (btype == 2){
-			generousboy *temp = new generousboy(bname, battract, bintell, bbudget, bminreq, , gfname);
-			*temp.committed = 1;
+			generousboy *temp = new generousboy(bname, battract, bintell, bbudget, bminreq, gfname);
+			temp -> committed = 1;
 			boy[i] = *temp;
 		} else if (btype == 3){
-			geekboy *temp = new geekboy(bname, battract, bintell, bbudget, bminreq, , gfname);
-			*temp.committed = 1;
+			geekboy *temp = new geekboy(bname, battract, bintell, bbudget, bminreq, gfname);
+			temp->committed = 1;
 			boy[i] = *temp;
 		}
 
@@ -62,15 +69,15 @@ void inputgifts::inpc(boys boy[], girls girl[], int *coup_num){
 		S(gcri);
 		if (gtype == 1){
 			choosygirl *temp = new choosygirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
-			*temp.committed = 1;
+			temp->committed = 1;
 			girl[i] = *temp;
 		} else if (gtype == 2){
 			normalgirl *temp = new normalgirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
-			*temp.committed = 1;
+			temp->committed = 1;
 			girl[i] = *temp;
 		} else if (gtype == 3){
 			desperategirl *temp = new desperategirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
-			*temp.committed = 1;
+			temp.->committed = 1;
 			girl[i] = *temp;
 		}
 	}

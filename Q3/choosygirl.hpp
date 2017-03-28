@@ -18,12 +18,9 @@
 
 */
 
-class choosygirl : public girls {
+class choosygirl : public girls {	
 	public:
-		int type;
-	
-	public:
-		choosygirl(string Gname, int Gattract, int Gintell, int Gmainbudget, int Gcri, string Bfname) : girls(Gname, Gattract, Gintell, Gmainbudget, Gcri, Bfname) {
+		choosygirl(string Gname, int Gattract, int Gintell, int Gmainbudget, int Gcri, string Bfname, int Type) : girls(Gname, Gattract, Gintell, Gmainbudget, Gcri, Bfname, Type) {
 			type = 1;
 		}
 };
