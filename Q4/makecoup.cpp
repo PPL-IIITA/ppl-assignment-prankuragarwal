@@ -15,7 +15,7 @@ using namespace std;
 */
 
 //own header inclusions
-#include "calculate.hpp"
+#include "makecoup.hpp"
 
 /**
 
@@ -23,7 +23,7 @@ using namespace std;
 
 */
 
-void calculate::calc(boys boy[], girls girl[], int boys_num, int girls_num) {
+void makecoup::calc(boys boy[], girls girl[], int boys_num, int girls_num) {
 	/**
 		loop to assign boys to girls
 	*/

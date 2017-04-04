@@ -1,5 +1,5 @@
-#ifndef PRINT_ANS2_HPP
-#define PRINT_ANS2_HPP
+#ifndef PRINT_HACO_HPP
+#define PRINT_HACO_HPP
 #include <iostream>
 #include <algorithm>
 #include <cstdio>
@@ -25,7 +25,7 @@ using namespace std;
 
 */
 
-class print_ans2{
+class print_haco{
 public:
 	int i;
 	int j;
@@ -33,17 +33,12 @@ public:
 	int n;
 	int k;
 
-public:
-	void print(boys boy[], girls girl[], int coup_num, int gift_num, gifts gift[], vector<int> record[]);
 
 public:
 	int calck(int coup_num);
 
 public:
 	void khappy(boys boy[], girls girl[], int coup_num, int k, double total[]);
-
-public:
-	void kcompat(boys boy[], girls girl[], int coup_num, int k, int compatibility[]);
 	
 };
 #endif

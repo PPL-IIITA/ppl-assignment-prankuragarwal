@@ -1,5 +1,5 @@
-#ifndef CALCULATE_HPP
-#define CALCULATE_HPP
+#ifndef MAKECOUP_HPP
+#define MAKECOUP_HPP
 #include <iostream>
 #include <algorithm>
 #include <cstdio>
@@ -25,7 +25,7 @@ using namespace std;
 
 */
 
-class calculate {
+class makecoup {
 public:
 	int i;
 	int j;

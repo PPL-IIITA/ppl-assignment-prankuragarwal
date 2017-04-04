@@ -68,12 +68,3 @@ void haco_calc::htotal(int coup_num, double ghappy[], double bhappy[], double to
 		total[i] = ghappy[i] + bhappy[i];
 	}
 }
-
-void haco_calc::compat(boys boy[], girls girl[], int coup_num, int compatibility[]){
-	for (i = 0; i < coup_num; i++){
-		comp = abs(boy[i].bbudget - girl[i].gmainbudget);
-		comp += abs(boy[i].battract - girl[i].gattract);
-		comp += abs(boy[i].bintell - girl[i].gintell);
-		compatibility[i] = comp;
-	}
-}

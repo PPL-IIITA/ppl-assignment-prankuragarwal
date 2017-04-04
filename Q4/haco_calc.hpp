@@ -44,9 +44,6 @@ public:
 
 public:
 	void htotal(int coup_num, double ghappy[], double bhappy[], double total[]);
-
-public:
-	void compat(boys boy[], girls girl[], int coup_num, int compatibility[]);
 	
 };
 #endif

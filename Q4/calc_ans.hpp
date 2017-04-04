@@ -1,5 +1,5 @@
-#ifndef PRINT_COUPLES_HPP
-#define PRINT_COUPLES_HPP
+#ifndef CALC_ANS_HPP
+#define CALC_ANS_HPP
 #include <iostream>
 #include <algorithm>
 #include <cstdio>
@@ -17,25 +17,27 @@ using namespace std;
 */
 
 //own header inclusions
-#include "makecoup.hpp"
+#include "print_haco.hpp"
 
 /**
 
-	This class prints the couples so formed into a text file.
+	This class prints the k most happy, k most compatible couples and all the gift exchanges in separate text files.
 
 */
 
-class print_couples{
+class calc_ans{
 public:
 	int i;
 	int j;
-	string bn;
+	int idx;
+	int id;
+	int k;
+	string temp;
+
 
 public:
-	int print(girls girl[], int girls_num);
+	void update(boys boy[], girls girl[], boys boy1[], girls girl1[], int coup_num, int boys_num, int girls_num);
 
-public:
-	void out_form(boys boy[], girls girl[], int boys_num, int girls_num);
 	
 };
 #endif
