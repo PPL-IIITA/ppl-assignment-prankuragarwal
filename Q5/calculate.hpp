@@ -29,6 +29,7 @@ class calculate {
 public:
 	int i;
 	int j;
+	int k;
 	int idx;
 	int fl;
 	int ma;

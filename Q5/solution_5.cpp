@@ -95,17 +95,8 @@ int main() {
 	///calculate k
 	k = p2.calck(coup_num);
 
-	///print k least happy couples
+	///print k most happy couples
 	p2.khappy(boy1, girl1, coup_num, k, total);
-
-	//update the original input
-	p2.update(boy1, girl1, boy, girl, coup_num, boys_num, girls_num);
-
-	///allocation of new boyfriends to girls
-    cl.makeit2(boy, girl, boys_num, girls_num);
-
-    //print updated list of couples
-    p1.print2(girl, girls_num);
 
 	return 0;
 }
