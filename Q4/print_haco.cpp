@@ -59,10 +59,10 @@ void print_haco::khappy(boys boy[], girls girl[], int coup_num, int k, double to
 	}
 }
 
-void print_haco::update(boys boy1[], girls girl1[], boys boy[], girls girl[], int k, int boys_num, int girls_num) {
+void print_haco::update(boys boy1[], girls girl1[], boys boy[], girls girl[], int coup_num, int boys_num, int girls_num) {
 	for (i = 0; i < coup_num; i++){
 		for(j = 0; j < boys_num; j++){
-			if (boy1[i].bname == boy[j].name){
+			if (boy1[i].bname == boy[j].bname){
 				boy[j] = boy1[i];
 				break;
 			}
