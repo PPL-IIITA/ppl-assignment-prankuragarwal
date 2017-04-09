@@ -1,0 +1,9 @@
+4
+boy_1 9 10 500 6 girl_1 1
+girl_1 8 7 306 boy_1 3 1
+boy_6 8 6 1000 7 girl_2 3
+girl_2 10 10 790 boy_6 2 1
+boy_4 4 7 999 3 girl_3 1
+girl_3 5 8 570 boy_4 2 2
+boy_5 6 8 357 5 girl_4 2
+girl_4 7 4 225 boy_5 1 3
