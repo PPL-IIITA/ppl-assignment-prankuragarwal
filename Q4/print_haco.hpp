@@ -39,6 +39,9 @@ public:
 
 public:
 	void khappy(boys boy[], girls girl[], int coup_num, int k, double total[]);
+
+public:
+	void update(boys boy1[], girls girl1[], boys boy[], girls girl[], int coup_num, int boys_num, int girls_num);
 	
 };
 #endif

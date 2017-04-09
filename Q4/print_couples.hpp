@@ -17,7 +17,7 @@ using namespace std;
 */
 
 //own header inclusions
-#include "makecoup.hpp"
+#include "makecouple.hpp"
 
 /**
 
@@ -33,6 +33,9 @@ public:
 
 public:
 	int print(girls girl[], int girls_num);
+
+public:
+	void print2(girls girl[], int girls_num);
 
 public:
 	void out_form(boys boy[], girls girl[], int boys_num, int girls_num);

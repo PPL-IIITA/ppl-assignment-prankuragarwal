@@ -38,6 +38,18 @@ int print_couples::print(girls girl[], int girls_num){
 	return j;
 }
 
+void print_couples::print2(girls girl[], int girls_num){
+	///time stamp
+	time_t tt = time(0);
+	char* lala = ctime (&tt);
+	cout << lala << endl;
+	for(i = 0; i < girls_num; i++){
+		if(girl[i].committed == 1){
+			cout << girl[i].gname << " has boyfriend " << girl[i].bfname << endl;
+		}
+	};
+}
+
 void print_couples::out_form(boys boy[], girls girl[], int boys_num, int girls_num){
 	for(i = 0; i < girls_num; i++){
 		if(girl[i].committed == 1){

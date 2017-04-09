@@ -44,7 +44,7 @@ double bhappy[1005];
 double total[1005];
 int compatibility[1005];
 int k;
-inputgifts i2;
+ingandc i2;
 basket b2;
 haco_calc hc2;
 print_haco p2;
@@ -97,6 +97,15 @@ int main() {
 
 	///print k least happy couples
 	p2.khappy(boy1, girl1, coup_num, k, total);
-	
+
+	//update the original input
+	p2.update(boy1, girl1, boy, girl, coup_num, boys_num, girls_num);
+
+	///allocation of new boyfriends to girls
+    cl.makeit2(boy, girl, boys_num, girls_num);
+
+    //print updated list of couples
+    p1.print2(girl, girls_num);
+
 	return 0;
 }

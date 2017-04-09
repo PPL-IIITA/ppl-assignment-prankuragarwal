@@ -35,6 +35,7 @@ int print_haco::calck(int coup_num){
 
 void print_haco::khappy(boys boy[], girls girl[], int coup_num, int k, double total[]){
 	freopen("happy.txt", "w", stdout);
+	int ctr = 2;
 	///time stamp
 	time_t tt = time(0);
 	char* lala = ctime (&tt);
@@ -45,13 +46,34 @@ void print_haco::khappy(boys boy[], girls girl[], int coup_num, int k, double to
 		temp[i] = make_pair(total[i], i);
 	}
 	sort(temp, temp + coup_num);
+
 	for(i = 0; i < coup_num; i++){
-		girl[temp[i].second].committed = 2;
-		boy[temp[i].second].committed = 2;
+		girl[temp[i].second].committed = ctr;
+		boy[temp[i].second].committed = ctr;
+		ctr++;
 		//cout << girl[temp[i].second].gname << " and " << boy[temp[i].second].bname << endl;
 		c++;
 		if (c == k){
 			break;
+		}
+	}
+}
+
+void print_haco::update(boys boy1[], girls girl1[], boys boy[], girls girl[], int k, int boys_num, int girls_num) {
+	for (i = 0; i < coup_num; i++){
+		for(j = 0; j < boys_num; j++){
+			if (boy1[i].bname == boy[j].name){
+				boy[j] = boy1[i];
+				break;
+			}
+		}
+	}
+	for (i = 0; i < coup_num; i++){
+		for (j = 0; j < girls_num; j++){
+			if (girl1[i].gname == girl[j].gname){
+				girl[j] = girl1[i];
+				break;
+			}
 		}
 	}
 }

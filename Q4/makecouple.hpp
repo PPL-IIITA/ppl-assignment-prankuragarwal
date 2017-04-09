@@ -1,5 +1,5 @@
-#ifndef MAKECOUP_HPP
-#define MAKECOUP_HPP
+#ifndef MAKECOUPLE_HPP
+#define MAKECOUPLE_HPP
 #include <iostream>
 #include <algorithm>
 #include <cstdio>
@@ -25,7 +25,7 @@ using namespace std;
 
 */
 
-class makecoup {
+class makecouple {
 public:
 	int i;
 	int j;
@@ -34,7 +34,10 @@ public:
 	int ma;
 
 public:
-	void calc(boys boy[], girls girl[], int boys_num, int girls_num);
+	void makeit(boys boy[], girls girl[], int boys_num, int girls_num);
+
+public:
+	void makeit2(boys boy[], girls girl[], int boys_num, int girls_num);
 	
 };
 #endif

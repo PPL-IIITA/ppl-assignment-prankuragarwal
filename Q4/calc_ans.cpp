@@ -24,6 +24,8 @@ using namespace std;
 */
 
 void update(boys boy[], girls girl[], boys boy1[], girls girl1[], int coup_num, int boys_num, int girls_num) {
+	int i, j, id, idx;
+	string temp;
 	for (i = 0; i < coup_num; i++){
 		temp = boy1[i].bname;
 		for (j = 0; j < boys_num; j++){
@@ -35,7 +37,7 @@ void update(boys boy[], girls girl[], boys boy1[], girls girl1[], int coup_num, 
 		boy[idx].committed = boy1[idx].committed;
 		temp = girl1[i].gname;
 		for (j = 0; j < girls_num; j++){
-			if (boy[j].gname == temp){
+			if (girl[j].gname == temp){
 				id = j;
 				break;
 			}
