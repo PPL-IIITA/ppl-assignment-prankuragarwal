@@ -47,15 +47,15 @@ void inputgifts::inpc(boys boy[], girls girl[], int *coup_num){
 		cin >> gfname;
 		S(btype);
 		if (btype == 1){
-			miserboy *temp = new miserboy(bname, battract, bintell, bbudget, bminreq, gfname);
+			miserboy *temp = new miserboy(bname, battract, bintell, bbudget, bminreq, gfname, 1);
 			temp->committed = 1;
 			boy[i] = *temp;
 		} else if (btype == 2){
-			generousboy *temp = new generousboy(bname, battract, bintell, bbudget, bminreq, gfname);
+			generousboy *temp = new generousboy(bname, battract, bintell, bbudget, bminreq, gfname, 2);
 			temp -> committed = 1;
 			boy[i] = *temp;
 		} else if (btype == 3){
-			geekboy *temp = new geekboy(bname, battract, bintell, bbudget, bminreq, gfname);
+			geekboy *temp = new geekboy(bname, battract, bintell, bbudget, bminreq, gfname, 3);
 			temp->committed = 1;
 			boy[i] = *temp;
 		}
@@ -68,16 +68,16 @@ void inputgifts::inpc(boys boy[], girls girl[], int *coup_num){
 		S(gtype);
 		S(gcri);
 		if (gtype == 1){
-			choosygirl *temp = new choosygirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
+			choosygirl *temp = new choosygirl(gname, gattract, gintell, gmainbudget, gcri, bfname, 1);
 			temp->committed = 1;
 			girl[i] = *temp;
 		} else if (gtype == 2){
-			normalgirl *temp = new normalgirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
+			normalgirl *temp = new normalgirl(gname, gattract, gintell, gmainbudget, gcri, bfname, 2);
 			temp->committed = 1;
 			girl[i] = *temp;
 		} else if (gtype == 3){
-			desperategirl *temp = new desperategirl(gname, gattract, gintell, gmainbudget, gcri, bfname);
-			temp.->committed = 1;
+			desperategirl *temp = new desperategirl(gname, gattract, gintell, gmainbudget, gcri, bfname, 3);
+			temp->committed = 1;
 			girl[i] = *temp;
 		}
 	}
