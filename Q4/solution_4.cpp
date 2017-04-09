@@ -101,7 +101,7 @@ int main() {
 	//update the original input
 	p2.update(boy1, girl1, boy, girl, coup_num, boys_num, girls_num);
 
-	///allocation of new boyfriends to girls
+	///allocation of new boyfriends to girls who broke up
     cl.makeit2(boy, girl, boys_num, girls_num);
 
     //print updated list of couples
