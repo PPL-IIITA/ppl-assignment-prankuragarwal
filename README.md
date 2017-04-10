@@ -4,9 +4,9 @@ ROLL No - LIT2015040
 Section - B
 
 ## OVERVIEW
-> 1) The project currenty solves questions 1 and 2.  
-> 2) The documentation of the project has been generated. To view documentation, go to ppl/html/index.html  
-> 3) The class diagram for both the questions (combined) is in ClDia.pdf.  
+> 1) The project currenty solves questions 1 to 5.  
+> 2) The documentation of the project has been generated. To view documentation, go to respective directory of the question and then ppl/html/index.html  
+> 3) The class diagram for all the questions (combined) is in ClDia.pdf.  
 > 4) All the source files, input-output files are available.  
 
 ## BUILD SYSTEM
@@ -61,8 +61,7 @@ ar rvs lib_load *.o
 g++ solution_1.cpp lib_load
 ./a.out
 ```
-> The couples will be stored in output_1.txt file.
-### Question 2
+> The couples will be stored in output_1.txt file.    
 
 > To run Question 2
 ```
