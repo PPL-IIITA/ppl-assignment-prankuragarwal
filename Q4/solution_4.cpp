@@ -106,6 +106,7 @@ int main() {
     	cl.makeit2(boy, girl, boys_num, girls_num);
 
     	//print updated list of couples
+	freopen("couples_info_updated.txt", "w", stdout);
     	p1.print2(girl, girls_num);
 
 	return 0;
