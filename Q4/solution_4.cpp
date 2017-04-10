@@ -59,6 +59,7 @@ int main() {
 	freopen("output_1.txt", "w", stdout);
 
 	///input from text file
+	freopen("input.txt", "r", stdin);
 	i1.inp(boy, girl, &boys_num, &girls_num);
 
 	///allocation of boyfriends to girls
