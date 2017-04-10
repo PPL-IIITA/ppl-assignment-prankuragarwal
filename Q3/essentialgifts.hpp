@@ -14,7 +14,7 @@
 
 /**
 
-	This class contains all the attributes of a gift.
+	This class contains all the attributes of an essential gift.
 
 */
 

@@ -1,6 +1,0 @@
-Mon Apr 10 06:00:11 2017
-
-girl_1 has boyfriend boy_1
-girl_2 has boyfriend boy_6
-girl_3 has boyfriend boy_4
-girl_4 has boyfriend boy_5

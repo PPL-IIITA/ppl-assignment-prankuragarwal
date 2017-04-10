@@ -26,7 +26,7 @@ using namespace std;
 
 /**
 
-	It contains the main function required for the solution of the first question of the assignment.
+	It contains the main function required for the solution of the third question of the assignment.
 
 */
 
@@ -62,7 +62,7 @@ int main() {
 	i1.inp(boy, girl, &boys_num, &girls_num);
 
 	///allocation of boyfriends to girls
-    cl.makeit(boy, girl, boys_num, girls_num);
+    	cl.makeit(boy, girl, boys_num, girls_num);
 
 	///print couples so formed and return number of couples
 	c = p1.print(girl, girls_num);

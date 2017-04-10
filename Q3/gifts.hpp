@@ -26,6 +26,10 @@ class gifts{
 		int utival;		///utility class
 		int taken;		///0 if the gift is not taken else 1
 
+	/**
+		Constructors
+	*/
+
 	public:
 		gifts(int Itemno, int Price, int Val, int Lux, int Diffget, int Uti, int Utival){
 			itemno = Itemno;

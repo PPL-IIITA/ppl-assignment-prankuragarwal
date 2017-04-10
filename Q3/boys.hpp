@@ -26,6 +26,10 @@ class boys {
 		string gfname;	///name of the girlfriend
 		int type; 		///boy's type : 1-Miser; 2-Generous; 3-Geek
 
+	/**
+		Constructors
+	*/
+
 	public:
 		boys(string Bname, int Battract, int Bintell, int Bbudget, int Bminreq, string Gfname, int Type){
 			bname = Bname;

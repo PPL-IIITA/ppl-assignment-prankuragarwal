@@ -14,8 +14,7 @@
 
 /**
 
-	This class contains all the attributes of a miser boy.
-
+	This class contains all the attributes of a miser boychoosy girl.
 */
 
 class choosygirl : public girls {	

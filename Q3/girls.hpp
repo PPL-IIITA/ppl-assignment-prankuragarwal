@@ -26,6 +26,10 @@ class girls {
 		int gcri;			///girl's criteria: 1-most attractive; 2-most rich; 3-most intelligent
 		int type;			///girl's type: 1-Choosy; 2-Normal; 3-Desperate
 
+	/**	
+		Constructors
+	*/
+
 	public:
 		girls(string Gname, int Gattract, int Gintell, int Gmainbudget, int Gcri, string Bfname, int Type){
 			gname = Gname;
