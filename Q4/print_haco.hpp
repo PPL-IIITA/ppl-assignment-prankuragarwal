@@ -21,7 +21,7 @@ using namespace std;
 
 /**
 
-	This class prints the k most happy, k most compatible couples and all the gift exchanges in separate text files.
+	This class prints the k least happy, k most compatible couples and all the gift exchanges in separate text files.
 
 */
 

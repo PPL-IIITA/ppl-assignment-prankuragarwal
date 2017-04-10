@@ -91,7 +91,7 @@ void makecouple::makeit(boys boy[], girls girl[], int boys_num, int girls_num) {
 
 void makecouple::makeit2(boys boy[], girls girl[], int boys_num, int girls_num) {
 	/**
-		loop to assign boys to girls
+		loop to reassign the couples who broke up.
 	*/
 	for(i = 0; i < girls_num; i++){
 		ma = 0;
