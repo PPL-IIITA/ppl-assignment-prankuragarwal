@@ -6,7 +6,7 @@ Section - B
 ## OVERVIEW
 > 1) The project currenty solves questions 1 to 5.  
 > 2) The documentation of the project has been generated. To view documentation, go to respective directory of the question and then ppl/html/index.html  
-> 3) The class diagram for all the questions (combined) is in ClDia.pdf.  
+> 3) The class diagram for all the questions is in their respective directories named as ClDia.pdf.  
 > 4) All the source files, input-output files are available.  
 
 ## BUILD SYSTEM
@@ -28,7 +28,7 @@ https://github.com/PPL-IIITA/ppl-assignment-prankuragarwal.git
 cd ppl-assignment-prankuragarwal
 ```
 
-###Question - 1 & 2
+### Question - 1 & 2
 >Change directory
 ```
 cd Q1
@@ -73,7 +73,7 @@ g++ solution_2.cpp lib_load
 > k most happy couples will be stored in happy.txt  
 > k most compatible couples will be stored in compatible.txt  
 
-###Question - 3
+### Question - 3
 >Change directory
 ```
 cd Q3
@@ -111,7 +111,7 @@ g++ solution_3.cpp lib_load
 > k most happy couples will be stored in happy.txt  
 > k most compatible couples will be stored in compatible.txt  
 
-###Question - 4
+### Question - 4
 >Change directory
 ```
 cd Q4
@@ -148,7 +148,7 @@ g++ solution_4.cpp lib_load
 > The file output_1.txt shows the original couples formed and couples_info_updated.txt shows the reassigned couples after breakup. 
 
 
-###Question - 5
+### Question - 5
 >Change directory
 ```
 cd Q5
