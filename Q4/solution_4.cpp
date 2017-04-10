@@ -62,7 +62,7 @@ int main() {
 	i1.inp(boy, girl, &boys_num, &girls_num);
 
 	///allocation of boyfriends to girls
-    cl.makeit(boy, girl, boys_num, girls_num);
+    	cl.makeit(boy, girl, boys_num, girls_num);
 
 	///print couples so formed and return number of couples
 	c = p1.print(girl, girls_num);
@@ -102,10 +102,10 @@ int main() {
 	p2.update(boy1, girl1, boy, girl, coup_num, boys_num, girls_num);
 
 	///allocation of new boyfriends to girls who broke up
-    cl.makeit2(boy, girl, boys_num, girls_num);
+    	cl.makeit2(boy, girl, boys_num, girls_num);
 
-    //print updated list of couples
-    p1.print2(girl, girls_num);
+    	//print updated list of couples
+    	p1.print2(girl, girls_num);
 
 	return 0;
 }
