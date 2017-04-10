@@ -29,7 +29,7 @@ void calculate::calc(boys boy[], girls girl[], int boys_num, int girls_num) {
 	*/
 	for (i = 0; i < boys_num - 1; i++){
 		for (j = i + 1; j < boys_num; j++){
-			if (boy[i].attractive > boy[j].attractive){
+			if (boy[i].battract > boy[j].battract){
 				boys temp = boy[i];
 				boy[i] = boy[j];
 				boy[j] = temp;
@@ -64,10 +64,10 @@ void calculate::calc(boys boy[], girls girl[], int boys_num, int girls_num) {
 					}
 				}
 				if(fl == 1){
-						girl[i].bfname = boy[idx].bname;
-						girl[i].committed = 1;
-						boy[idx].committed = 1;
-						boy[idx].gfname = girl[i].gname;
+						girl[idx].bfname = boy[i].bname;
+						girl[idx].committed = 1;
+						boy[i].committed = 1;
+						boy[i].gfname = girl[i].gname;
 				}
 				if (fl == 1){
 					break;

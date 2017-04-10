@@ -22,7 +22,7 @@ using namespace std;
 
 //own header inclusions
 #include "print_couples.hpp"
-#include "print_haco.hpp"
+#include "print_ans2.hpp"
 
 /**
 
@@ -33,7 +33,7 @@ using namespace std;
 //global variables
 boys boy[1005], boy1[1005];
 girls girl[1005], girl1[1005];
-makecouple cl;
+calculate cl;
 print_couples p1;
 input i1;
 gifts gift[1005];
@@ -47,7 +47,7 @@ int k;
 ingandc i2;
 basket b2;
 haco_calc hc2;
-print_haco p2;
+print_ans2 p2;
 
 int coup_num;
 int gift_num;
@@ -59,10 +59,11 @@ int main() {
 	freopen("output_1.txt", "w", stdout);
 
 	///input from text file
+	freopen("input.txt", "r", stdin);
 	i1.inp(boy, girl, &boys_num, &girls_num);
 
 	///allocation of boyfriends to girls
-    cl.makeit(boy, girl, boys_num, girls_num);
+    cl.calc(boy, girl, boys_num, girls_num);
 
 	///print couples so formed and return number of couples
 	c = p1.print(girl, girls_num);
