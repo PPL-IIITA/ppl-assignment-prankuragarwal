@@ -31,7 +31,7 @@ cd ppl-assignment-prankuragarwal
 ### Question - 1 & 2
 >Change directory
 ```
-cd Q1
+cd "Q1 - 2"
 ```
 
 > Generate random input for boys and girls
