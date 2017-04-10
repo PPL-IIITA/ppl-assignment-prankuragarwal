@@ -25,7 +25,7 @@ using namespace std;
 
 void calculate::calc(boys boy[], girls girl[], int boys_num, int girls_num) {
 	/**
-		loop to assign boys to girls
+		loop to assign boys to girls according to the question.
 	*/
 	for (i = 0; i < boys_num - 1; i++){
 		for (j = i + 1; j < boys_num; j++){
