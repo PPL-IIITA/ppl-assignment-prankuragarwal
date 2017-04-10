@@ -26,7 +26,7 @@ using namespace std;
 
 /**
 
-	It contains the main function required for the solution of the first question of the assignment.
+	It contains the main function required for the solution of the fourth question of the assignment.
 
 */
 
